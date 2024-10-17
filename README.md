@@ -59,11 +59,11 @@ hashcat --version
 ```bash
 # Recommended cuda version: 12.3
 wget https://developer.download.nvidia.com/compute/cuda/12.3.1/local_installers/cuda-repo-ubuntu2204-12-3-local_12.3.1-545.23.08-1_amd64.deb
-dpkg -i cuda-repo-ubuntu2204-12-3-local_12.3.1-545.23.08-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu2204-12-3-local_12.3.1-545.23.08-1_amd64.deb
 cp /var/cuda-repo-ubuntu2204-12-3-local/cuda-*-keyring.gpg /usr/share/keyrings/
-apt-get update
-apt-get -y install cuda-toolkit-12-3
-apt-get -y install -y cuda-drivers
+sudo apt-get update
+sudo apt-get -y install cuda-toolkit-12-3
+sudo apt-get -y install -y cuda-drivers
 
 # Valid for x64 architecture. Consult nvidia documentation for any other architecture.
 export CUDA_VERSION=cuda-12.3
@@ -74,7 +74,7 @@ echo "">>~/.bashrc
 echo "PATH=$PATH">>~/.bashrc
 echo "LD_LIBRARY_PATH=$LD_LIBRARY_PATH">>~/.bashrc
 
-reboot  # Changes might need a restart depending on the system
+sudo reboot  # Changes might need a restart depending on the system
 
 nvidia-smi
 nvcc --version
