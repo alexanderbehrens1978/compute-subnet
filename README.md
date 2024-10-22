@@ -65,6 +65,8 @@ cd Compute-Subnet
 python3 -m pip install -r requirements.txt
 python3 -m pip install -e .
 ```
+python3 -m pip install -e . --config-settings editable_mode=compat
+
 
 ## Extra dependencies - Miners
 
