@@ -166,6 +166,9 @@ sudo systemctl restart docker
 To log into the wandb project named opencompute from neuralinternet, miners and validators need a wandb API key.
 Rename the `.env.example` file to `.env` and replace the placeholder with your actual API key.
 
+cd ~/Compute-Subnet
+mv .env.example .env
+
 ### Running subtensor locally
 
 ```bash
