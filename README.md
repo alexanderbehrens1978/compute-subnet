@@ -119,7 +119,6 @@ sudo apt install docker.io -y
 sudo apt install docker-compose -y
 sudo systemctl start docker
 sudo apt install at
-docker run hello-world  # Must not return you any error.
 ```
 
 To run a docker container for allocation, user must be added to docker group to run without sudo command.
