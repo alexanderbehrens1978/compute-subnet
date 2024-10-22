@@ -178,6 +178,26 @@ cd subtensor
 docker-compose up --detach
 ```
 
+sudo apt-get remove docker-compose
+pip install docker-compose
+Alternativ kannst du docker-compose auch über curl installieren:
+bash
+Code kopieren
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.0.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+Aktualisiere die docker-Python-Bibliothek:
+
+Stelle sicher, dass die docker-Bibliothek auf dem neuesten Stand ist:
+bash
+Code kopieren
+pip install --upgrade docker==7.0.0
+Verwende die neuere docker compose CLI:
+
+Ab Version 2.0 wird docker-compose als docker compose integriert. Du kannst die neue CLI verwenden:
+bash
+Code kopieren
+docker compose up --detach
+
 If you have more complicated needs, see the [subtensor](https://github.com/opentensor/subtensor/) repo for more details and understanding.
 
 
