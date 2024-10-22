@@ -78,7 +78,7 @@ wget https://hashcat.net/files/hashcat-6.2.6.tar.gz
 tar xzvf hashcat-6.2.6.tar.gz
 cd hashcat-6.2.6/
 make
-make install  # prefixed by sudo if not in the sudoers
+sudo make install
 hashcat --version
 ```
 
