@@ -138,6 +138,29 @@ sudo apt-get install -y nvidia-container-toolkit
 sudo apt install -y nvidia-docker2
 ```
 
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
+  && curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add - \
+  && curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+Paketlisten aktualisieren:
+
+Aktualisiere die Paketlisten, damit die neuen Quellen berücksichtigt werden:
+bash
+Code kopieren
+sudo apt-get update
+NVIDIA Docker-Pakete installieren:
+
+Installiere jetzt nvidia-container-toolkit und nvidia-docker2:
+bash
+Code kopieren
+sudo apt-get install -y nvidia-container-toolkit
+sudo apt-get install -y nvidia-docker2
+Docker-Dienst neu starten:
+
+Nach der Installation solltest du den Docker-Dienst neu starten:
+bash
+Code kopieren
+sudo systemctl restart docker
+
 ### WanDB
 
 To log into the wandb project named opencompute from neuralinternet, miners and validators need a wandb API key.
