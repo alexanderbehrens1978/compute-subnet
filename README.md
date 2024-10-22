@@ -198,6 +198,40 @@ bash
 Code kopieren
 docker compose up --detach
 
+
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.0.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+nach sehen ob in /usr/bin docker-compose liegt
+wenn nicht dann
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+
+sudo ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+
+
+bash
+Code kopieren
+sudo usermod -aG docker $USER
+Dieser Befehl fügt deinen aktuellen Benutzer ($USER) zur Docker-Gruppe hinzu.
+
+2. Sitzung neu laden
+Damit die Änderungen wirksam werden, musst du dich von deiner aktuellen Sitzung abmelden und wieder anmelden oder die Gruppenänderung in deiner aktuellen Shell aktualisieren:
+
+bash
+Code kopieren
+newgrp docker
+Alternativ kannst du auch deinen Rechner neu starten oder die Sitzung neu öffnen.
+
+3. Überprüfe, ob es funktioniert
+Nach diesen Schritten solltest du Docker-Befehle ohne sudo ausführen können:
+
+bash
+Code kopieren
+docker ps
+
 If you have more complicated needs, see the [subtensor](https://github.com/opentensor/subtensor/) repo for more details and understanding.
 
 
