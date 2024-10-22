@@ -172,6 +172,7 @@ mv .env.example .env
 ### Running subtensor locally
 
 ```bash
+cd ~/Compute-Subnet
 git clone https://github.com/opentensor/subtensor.git
 cd subtensor
 docker-compose up --detach
