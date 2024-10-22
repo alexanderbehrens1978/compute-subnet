@@ -38,6 +38,26 @@ pip install --upgrade setuptools setuptools==70.0.0
 
 ## Dependencies - Validators / Miners
 
+requirements.txt
+at==0.0.3
+bittensor==8.2.0
+black==23.7.0
+cryptography==42.0.5
+docker==7.0.0
+GPUtil==1.4.0
+igpu==0.1.2
+numpy==2.0.1
+psutil==5.9.8
+pyinstaller==6.4.0
+torch==2.1.2
+wandb==0.16.6
+pyfiglet==1.0.2
+python-dotenv==1.0.1
+requests==2.31.0
+paramiko==3.4.1
+aiohttp==3.10.2
+
+
 ```bash
 git clone https://github.com/neuralinternet/Compute-Subnet.git
 cd Compute-Subnet
