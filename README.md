@@ -57,6 +57,7 @@ requests==2.31.0
 paramiko==3.4.1
 aiohttp==3.10.2
 
+pip install --upgrade Compute-Subnet
 
 ```bash
 git clone https://github.com/neuralinternet/Compute-Subnet.git
