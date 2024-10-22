@@ -26,6 +26,9 @@ This repository serves as a compute-composable subnet, integrating various cloud
 This repository requires python3.8 or higher. To install, simply clone this repository and install the requirements. You are limited to one external IP per UID. There is automatic blacklisting in place if validators detect anomalous behavior. 
 
 ### Bittensor
+Ubuntu 22.04
+echo "export PATH="$HOME/.local/bin:$PATH"" > /home/alex/.bashrc
+pip install --upgrade setuptools setuptools==70.0.0
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/opentensor/bittensor/master/scripts/install.sh)"
