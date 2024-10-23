@@ -1,5 +1,11 @@
 # Compute Subnet
 
+Install Skript
+
+https://github.com/neuralinternet/compute-subnet/blob/main/Installation%20Script/SN27%20Installer%20Instructions.md
+
+
+
 [![Discord Chat](https://img.shields.io/discord/308323056592486420.svg)](https://discord.gg/bittensor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
