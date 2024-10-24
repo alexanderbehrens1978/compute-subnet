@@ -63,6 +63,11 @@ To install Bittensor with SN27 dependencies, simply run the following command in
 ```
 The script will guide you through the installation process and set up the necessary components for running a Bittensor miner on SN27.
 
+If Networkerror erscheinen, please use an other mirror server
+
+export PIP_INDEX_URL=https://pypi.doubanio.com/simple
+
+
 Please note that this script is designed for Linux systems with the apt package manager. If you're using a different Linux distribution or package manager, you may need to modify the script accordingly.
 
 ## Disclaimer
