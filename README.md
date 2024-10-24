@@ -4,7 +4,7 @@ Install Skript
 
 Other Mirror Server if network error erscheinen
 
-export PIP_INDEX_URL=https://pypi.doubanio.com/simple
+export PIP_INDEX_URL=https://pypi.org/simple
 
 
 https://github.com/neuralinternet/compute-subnet/blob/main/Installation%20Script/SN27%20Installer%20Instructions.md
