@@ -4,6 +4,8 @@ Install Skript
 
 Other Mirror Server if network error erscheinen
 
+sudo ufw allow 12128
+
 export PIP_INDEX_URL=https://pypi.org/simple
 
 
@@ -12,6 +14,10 @@ https://github.com/neuralinternet/compute-subnet/blob/main/Installation%20Script
 Hier bei mir
 
 https://github.com/alexanderbehrens1978/compute-subnet/blob/main/Installation%20Script/SN27%20Installer%20Instructions.md
+
+Nach dem Skript
+
+
 
 [![Discord Chat](https://img.shields.io/discord/308323056592486420.svg)](https://discord.gg/bittensor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
