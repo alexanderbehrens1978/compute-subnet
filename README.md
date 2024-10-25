@@ -129,7 +129,7 @@ echo "">>~/.bashrc
 echo "PATH=$PATH">>~/.bashrc
 echo "LD_LIBRARY_PATH=$LD_LIBRARY_PATH">>~/.bashrc
 
-sudo reboot  # Changes might need a restart depending on the system
+# sudo reboot ausführen  # Changes might need a restart depending on the system
 
 nvidia-smi
 nvcc --version
