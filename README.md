@@ -1,5 +1,9 @@
 # Compute Subnet
 
+Ein Miner Server
+
+Ein Subtensor Server
+
 Install Skript
 
 Other Mirror Server if network error erscheinen
